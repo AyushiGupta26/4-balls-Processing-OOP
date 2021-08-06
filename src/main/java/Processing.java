@@ -35,7 +35,7 @@ public class Processing extends PApplet {
     @Override
     public void draw() {
         for (Circle circle : circlesList) {
-            ellipse(circle.xPosition, circle.yPosition, circle.diameter, circle.diameter);
+            circle.draw(this);
             circle.move();
         }
     }

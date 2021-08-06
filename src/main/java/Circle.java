@@ -1,3 +1,5 @@
+import processing.core.PApplet;
+
 public class Circle {
     float xPosition, yPosition, diameter, speed;
 
@@ -10,5 +12,9 @@ public class Circle {
 
     public void move(){
         xPosition += speed;
+    }
+
+    public void draw(PApplet pApplet) {
+        pApplet.ellipse(xPosition, yPosition, diameter, diameter);
     }
 }
